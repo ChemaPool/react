@@ -1,0 +1,107 @@
+body {
+  margin: auto;
+  width: 375px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 50px;
+  font-family: Roboto,Arial,sans-serif;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.containerEndDay label {
+  padding: 0px 20px 0px 0px;
+}
+
+.containerEndDay span {
+  padding: 0px 0px 0px 5px;
+}
+
+span {
+  cursor: pointer;
+}
+
+.selectDay {
+  margin-left: 63px;
+  width: 150px;
+}
+
+.buttonsActions {
+  margin-right: -80px;
+  text-align: right;
+}
+
+.md-select {
+  margin-top: 10px;
+  float: inline-end;
+}
+
+.md-select *, .md-select :after, .md-select :before {
+  box-sizing: border-box;
+  border: none;
+}
+
+.md-select [type=button] {
+  box-sizing: content-box;
+  background: #f1f3f4;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.73);
+  cursor: pointer;
+  line-height: 48px;
+  width: 120px;
+  height: 36px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.md-select [type=button]:focus, .md-select [type=button]:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.md-select [type=button]:after {
+  content: '\25be';
+  float: right;
+  padding-right: 10px;
+}
+
+.md-select ul[role=listbox] {
+  background-color: white;
+  cursor: pointer;
+  list-style: none;
+  line-height: 26px;
+  overflow: hidden;
+  margin: 0;
+  max-height: 0;
+  padding: 0;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: all 0.15s cubic-bezier(0.35, 0, 0.25, 1);
+  width: 120px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 10px 0px;
+}
+
+.md-select ul[role=listbox] li {
+  height: 48px;
+  margin: 0;
+  padding: 10px 16px;
+  outline: none;
+  overflow: hidden;
+}
+
+.md-select ul[role=listbox] li:focus, .md-select ul[role=listbox] li:hover, .md-select ul[role=listbox] li.active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.md-select.active ul {
+  z-index: 2;
+  overflow: auto;
+  max-height: 200px;
+  padding: 8px 0 16px 0px;
+  transition: all 0.2s ease;
+}
