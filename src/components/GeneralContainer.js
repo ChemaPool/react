@@ -5,7 +5,7 @@ import { RadioEnd } from './EndDay';
 import { Input } from './InputText';
 import CheckDay from './CheckDays';
 
-const Container = () =>  {
+const Container = () => {
   return (
     <div>
       <h2>Periodicidad personalizada</h2>
